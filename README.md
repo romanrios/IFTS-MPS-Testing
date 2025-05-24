@@ -2,7 +2,7 @@
 
 ## Tests con NUnit en C#
 
-Proyecto de pruebas unitarias usando NUnit.
+Proyectos de pruebas unitarias usando NUnit.
 
 ### Requisitos
 
@@ -21,3 +21,13 @@ dotnet restore
 ```
 dotnet test
 ```
+
+
+---
+
+
+Instituto Superior de Formación Técnica N° 29
+
+Tecnicatura Superior de Desarrollo en Software
+
+Año 2025
