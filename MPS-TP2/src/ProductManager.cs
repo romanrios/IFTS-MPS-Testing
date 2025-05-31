@@ -19,6 +19,5 @@ namespace MPS_TP2
         {
             return products.Find(p => p.Name == name);
         }
-
     }
 }

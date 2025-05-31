@@ -1,6 +1,6 @@
-﻿namespace MPS_TP2
+﻿namespace MPS_TP2.Tests
 {
-    public class UnitTest1
+    public class ProductManagementTests
     {
         private ProductManager manager;
 
@@ -66,9 +66,8 @@
             Assert.That(total, Is.EqualTo(1100));
         }
 
-        [Test]
-
         // Verificar que calculateTotalPrice calcule correctamente el precio total con impuestos para productos de la categoría "Alimentos".
+        [Test]
         public void CalculateTotalPrice_Alimentos()
         {
             var product = new Product(1, "Queso", 100, "Alimentos");
