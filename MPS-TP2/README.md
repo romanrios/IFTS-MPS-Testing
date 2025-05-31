@@ -27,8 +27,8 @@ MPS_TP2/
 
 ## Pruebas
 
-- Verificar que un producto se crea correctamente con un `id`, `name`, `price` y `category` válidos.
-- Verificar que addProduct agrega correctamente un producto a la lista interna.
+- Verificar que un producto se crea correctamente con un `id` , `name` , `price` y `category` válidos.
+- Verificar que `addProduct` agrega correctamente un producto a la lista interna.
 - Agregar varios productos y verificar que `findProductByName` los encuentre correctamente por nombre.
 - Verificar que `calculateTotalPrice` calcule correctamente el precio total con impuestos para productos de la categoría `"Electrónica"`.
 - Verificar que `calculateTotalPrice` calcule correctamente el precio total con impuestos para productos de la categoría `"Alimentos"`.
