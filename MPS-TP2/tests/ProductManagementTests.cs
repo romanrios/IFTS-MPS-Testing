@@ -18,17 +18,20 @@
 
             Assert.Multiple(() =>
             {
-                Assert.That(product.Id, Is.EqualTo(1));
-                Assert.That(product.Name, Is.EqualTo("Celular"));
-                Assert.That(product.Price, Is.EqualTo(1000));
-                Assert.That(product.Category, Is.EqualTo("Electrónica"));
+                Assert.That(product.Id, Is.EqualTo(1), "El ID del producto no es el esperado.");
+                Assert.That(product.Name, Is.EqualTo("Celular"), "El nombre del producto no es el esperado.");
+                Assert.That(product.Price, Is.EqualTo(1000), "El precio del producto no es el esperado.");
+                Assert.That(product.Category, Is.EqualTo("Electrónica"), "La categoría del producto no es la esperada.");
             });
         }
 
         [Test]
         public void NoPermitirPrecioNegativo()
         {
-            Assert.Throws<ArgumentException>(() => new Product(1, "TV", -100, "Electrónica"));
+            Assert.Throws<ArgumentException>(
+                () => new Product(1, "TV", -100, "Electrónica"),
+                "Se esperaba una excepción por precio negativo, pero no se lanzó ninguna."
+            );
         }
 
         // Verificar que addProduct agrega correctamente un producto a la lista interna.
@@ -39,8 +42,8 @@
             manager.AddProduct(product);
 
             var encontrado = manager.FindProductByName("Pan");
-            Assert.That(encontrado, Is.Not.Null);
-            Assert.That(encontrado.Name, Is.EqualTo("Pan"));
+            Assert.That(encontrado, Is.Not.Null, "El producto no fue encontrado luego de agregarlo.");
+            Assert.That(encontrado.Name, Is.EqualTo("Pan"), "El nombre del producto encontrado no coincide con el esperado.");
         }
 
 
@@ -52,8 +55,8 @@
             manager.AddProduct(new Product(2, "Leche", 50, "Alimentos"));
 
             var producto = manager.FindProductByName("Leche");
-            Assert.That(producto, Is.Not.Null);
-            Assert.That(producto.Id, Is.EqualTo(2));
+            Assert.That(producto, Is.Not.Null, "El producto no fue encontrado.");
+            Assert.That(producto.Id, Is.EqualTo(2), "El ID del producto encontrado no coincide con el esperado.");
         }
 
         // Verificar que calculateTotalPrice calcule correctamente el precio total con impuestos para productos de la categoría "Electrónica".
@@ -63,7 +66,8 @@
             var product = new Product(1, "Laptop", 1000, "Electrónica");
             var total = manager.CalculateTotalPrice(product);
 
-            Assert.That(total, Is.EqualTo(1100));
+            Assert.That(total, Is.EqualTo(1100), "El precio total con impuestos para 'Electrónica' no es correcto.");
+
         }
 
         // Verificar que calculateTotalPrice calcule correctamente el precio total con impuestos para productos de la categoría "Alimentos".
@@ -73,7 +77,7 @@
             var product = new Product(1, "Queso", 100, "Alimentos");
             var total = manager.CalculateTotalPrice(product);
 
-            Assert.That(total, Is.EqualTo(105));
+            Assert.That(total, Is.EqualTo(105), "El precio total con impuestos para 'Alimentos' no es correcto.");
         }
     }
 }

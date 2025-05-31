@@ -27,11 +27,11 @@ MPS_TP2/
 
 ## Pruebas
 
-- Verificar que un producto se crea correctamente con un id, name, price y category válidos.
+- Verificar que un producto se crea correctamente con un `id`, `name`, `price` y `category` válidos.
 - Verificar que addProduct agrega correctamente un producto a la lista interna.
-- Agregar varios productos y verificar que findProductByName los encuentre correctamente por nombre.
-- Verificar que calculateTotalPrice calcule correctamente el precio total con impuestos para productos de la categoría "Electrónica".
-- Verificar que calculateTotalPrice calcule correctamente el precio total con impuestos para productos de la categoría "Alimentos".
+- Agregar varios productos y verificar que `findProductByName` los encuentre correctamente por nombre.
+- Verificar que `calculateTotalPrice` calcule correctamente el precio total con impuestos para productos de la categoría `"Electrónica"`.
+- Verificar que `calculateTotalPrice` calcule correctamente el precio total con impuestos para productos de la categoría `"Alimentos"`.
 
 
 ---
@@ -77,6 +77,8 @@ Instituto Superior de Formación Técnica N° 29
 
 Tecnicatura Superior de Desarrollo en Software
 
-Metodología de Pruebas de Sistemas - Comisión A
+Metodología de Pruebas de Sistemas 
 
-Año 2025
+Docente: Kevin Axel Del Bello
+
+Comisión A | Año 2025
