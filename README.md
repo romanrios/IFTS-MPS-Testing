@@ -1,33 +1,19 @@
 # IFTS - Metodología de Pruebas de Sistemas
 
-## Tests con NUnit en C#
-
-Proyectos de pruebas unitarias usando NUnit.
-
-### Requisitos
-
-- .NET SDK instalado  
-- Extensiones de Visual Studio Code:
-  - .NET Core Test Explorer  
-  - C#  
-  - C# Dev Kit  
-
-### Reconstruir el proyecto
-```
-dotnet restore
-```
-
-### Ejecutar las pruebas
-```
-dotnet test
-```
+Repositorio para pruebas con NUnit y Selenium
 
 
 ---
 
 
+🧑‍💻 Román Ríos
+
 Instituto Superior de Formación Técnica N° 29
 
 Tecnicatura Superior de Desarrollo en Software
 
-Año 2025
+Metodología de Pruebas de Sistemas
+
+Docente: Kevin Axel Del Bello
+
+Comisión A | Año 2025
