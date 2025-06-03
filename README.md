@@ -3,11 +3,13 @@
 Repositorio para pruebas con NUnit y Selenium en C#
 
 
+
 <table align="center">
   <tr>
     <td align="center" width="160"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Nunit_logo_250.png?20151216015617" alt="NUnit Logo" width="150"/></td>
-    <td align="center" width="160"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Selenium_Logo.png" alt="Selenium Logo" width="80"/></td>
+    <td align="center" width="160"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Selenium_Logo.png" alt="Selenium Logo" width="85"/></td>
     <td align="center" width="160"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png" alt="C# Logo" width="120"/></td>
+    <td align="center" width="160"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Microsoft_.NET_logo.svg" alt=".NET Logo" width="90"/></td>
   </tr>
 </table>
 
