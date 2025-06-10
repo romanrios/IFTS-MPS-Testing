@@ -1,4 +1,4 @@
-﻿namespace SeleniumLoginTest;
+﻿// namespace SeleniumLoginTest;
 
 using NUnit.Framework;
 using OpenQA.Selenium;
